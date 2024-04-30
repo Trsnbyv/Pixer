@@ -1,0 +1,407 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+  --blue-bg: rgb(0, 186, 252);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/open-sans/OpenSansCondensed-Regular.woff2") format("woff2"),
+    url("../fonts/open-sans/OpenSansCondensed-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/open-sans/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/open-sans/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.container {
+  width: 1105px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+h3 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+p {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+button {
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 8px 16px;
+  background-color: var(--blue-bg);
+  border: 3px solid transparent;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+button:hover {
+  background-color: white;
+  color: var(--blue-bg);
+  border-color: var(--blue-bg);
+}
+button:active {
+  background-color: rgba(0, 186, 252, 0.6);
+  color: white;
+  border-color: rgba(0, 186, 252, 0.6);
+}
+.header-top {
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+.header-top-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 18px 0;
+  z-index: 2;
+}
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+.nav-link {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  padding-bottom: 17px;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.nav-link:hover {
+  border-bottom: 3px solid black;
+}
+.nav-link:active {
+  border-bottom: 3px solid black;
+}
+.nav-tel {
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  padding: 8px 16px;
+  background-color: var(--blue-bg);
+  border: 3px solid transparent;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.nav-tel:hover {
+  background-color: white;
+  color: var(--blue-bg);
+  border-color: var(--blue-bg);
+}
+.nav-tel:active {
+  background-color: rgba(0, 186, 252, 0.6);
+  color: white;
+  border-color: transparent;
+}
+.header-content-wrapper {
+  padding-top: 156px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.header-content-wrapper-item {
+  width: 45%;
+}
+.header-content-title {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+.header-content-text {
+  margin-bottom: 24px;
+}
+.header-content-video {
+  border-radius: 10px;
+}
+/* services section */
+
+.section-title {
+  margin: 135px auto 0;
+  text-align: center;
+  width: 720px;
+  margin-bottom: 24px;
+}
+.section-title h2 {
+  margin-bottom: 16px;
+}
+.section-title p {
+  color: black;
+}
+.services-section-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  gap: 80px;
+  margin-bottom: 48px;
+}
+
+.services-item {
+  width: 28%;
+  text-align: center;
+  padding: 24px 55px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.services-item:hover {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 12px 21px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 12px 21px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+}
+.services-item:active {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  background: rgb(255, 255, 255);
+}
+.services-item-title {
+  margin: 16px 0;
+}
+
+.services-link-wrapper {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 120px;
+}
+
+.services-link {
+  color: rgb(0, 186, 252);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+.services-link:hover {
+  text-decoration: underline;
+}
+
+/* Process section */
+.process-item {
+  width: 832px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 48px;
+}
+.process-item-title {
+  margin-bottom: 10px;
+}
+
+.process-btn {
+  display: block;
+  margin: auto;
+  margin-bottom: 55px;
+}
+/* form section */
+.form-section {
+  background-color: rgb(0, 186, 252);
+  padding: 56px;
+}
+.title-last {
+  margin: 0 auto;
+}
+.title-last h2 {
+  color: rgb(255, 255, 255);
+}
+.title-last p {
+  color: rgb(255, 255, 255);
+}
+
+.form-wrapper {
+  margin: 24px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 350px;
+  gap: 16px;
+  padding: 16px 24px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}
+.form-wrapper input,
+select {
+  border-radius: 5px;
+  background: rgb(243, 243, 243);
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  border: 3px solid transparent;
+  width: 100%;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.form-wrapper input:hover,
+select:hover {
+  border: 3px solid var(--blue-bg);
+}
+.form-wrapper input:focus,
+select:focus {
+  border-color: transparent;
+}
+.form-wrapper select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url("../images/arrow-down.png");
+  background-position: calc(97%) calc(50%);
+}
+/*  site footer*/
+
+.site-footer {
+  background-color: black;
+  padding: 56px;
+}
+.site-footer h2 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.site-footer p {
+  color: white;
+}
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 792px;
+  gap: 90px;
+}
+.footer-item-first {
+  width: 41%;
+}
+.footer-item-list li {
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+}
+.footer-list-link {
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.footer-list-link:hover {
+  color: rgb(0, 186, 252);
+}
+.footer-item-link:focus {
+  opacity: 0.6;
+}
